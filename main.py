@@ -81,41 +81,51 @@ def weakness(type1, type2): #function for weakness
 
       match type1:
 
-        case "Normal":
+        case "Normal": #Normal/None
 
           print(" Fighting\n")
 
-        case "Fire":
+        case "Fire": #Fire/None
 
           print(" Water\n", "Ground\n", "Rock\n")
 
-        case "Grass":
+        case "Grass": #Grass/None
 
           print(" Fire\n", "Ice\n", "Flying\n", "Poison\n", "Bug\n") 
           
-        case "Water":
+        case "Water": #Water/None
 
           print(" Grass\n", "Electric\n")
 
-        case "Electric":
+        case "Electric": #Electric/None
 
-          print(" Ground\n")
+          print(" Ground\n") 
 
-        case "Psychic":
+        case "Psychic": #Psychic/None
 
           print(" Dark\n", "Bug\n", "Ghost\n")
 
-        case "Dark":
+        case "Dark": #Dark/None
 
           print(" Fighting\n", "Bug\n")
 
-        case "Steel":
+        case "Steel": #Steel/None
 
-          print(" Fire\n", "Fighting", "Ground")
+          print(" Fire\n", "Fighting\n", "Ground\n")
 
-        case "Fighting":
+        case "Fighting": #Fighting/None
 
           print(" Psychic\n", "Flying\n")
+
+        case "Ground": #Ground/None
+
+          print(" Water\n", "Grass\n", "Ice\n")
+
+        case "Rock": #Rock/None
+
+          print("Grass\n", "Water\n", "Fighting\n", "Steel\n", "Ground\n")
+
+        
           
 
 
@@ -140,19 +150,28 @@ def checkStats(p): #function for checking stats
   
   print(" HP:", p.hp)
   print(" Attack:", p.atk)
+  print(" Defense:", p.dfs)
+  print(" Special Attack:", p.spatk)
+  print(" Special Defense:", p.spdfs)
+  print(" Speed:", p.spd)
+  
+  
+  
   
 
 
 
 
   #Also print the total
-  # t = 0
+  t = 0
   # And t should equal the sum of all the stats
   
   # ADD LINE FOR SUMMING HERE
 
+
+  t += (p.hp + p.atk + p.dfs + p.spatk + p.spdfs + p.spd)
   # Uncomment the line below by deleting the #
-  #print("Total:", t, "\n")
+  print("Total: ", t, "\n")
 
   
 
@@ -317,18 +336,6 @@ while switch == True:
     print("\n")
     checkEntry(dex[int(ent)-1])
 
-    if int(ent) < 10:
-      with Image.open("/Downloads/pkmn", "00" + str(ent) + ".gif") as img:
-        img.show()
-            
-    if int(ent) >= 10 and i < 100:
-      with Image.open("0" + str(ent) + ".gif") as img:  
-        img.show()
-        
-    if int(ent) >= 100:
-      with Image.open(str(ent) + ".gif") as img:  
-        img.show()
-
   
   if flag == False:
     print("\n")
@@ -336,13 +343,4 @@ while switch == True:
       if (" " + ent).lower() == dex[i].name.lower():
         checkEntry(dex[i])
 
-        if i < 10:
-          with Image.open("00" + str(i)+ ".gif") as img:
-            img.show()
-            
-        if i >= 10 and i < 100:
-          with Image.open("0" + str(i) + ".gif") as img:  
-            img.show()
-        if i >= 100:
-          with Image.open(str(i) + ".gif") as img:  
-            img.show()
+
