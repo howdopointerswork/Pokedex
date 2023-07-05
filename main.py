@@ -128,30 +128,23 @@ def weakness(type1, type2): #function for weakness
         
           
 
-
 ###################################################
 ###################################################
 
-def displayImgs(s):
 
 
-  img = Image.open("gifs/"+s+".gif")
-  img.show()
 
+def displayImg(i):
+
+  if i<10:
+    img = Image.open("gifs/00"+str(i)+".gif") 
+
+  elif i<100:
+    img = Image.open("gifs/0"+str(i)+".gif")
+
+  elif i>=100:
+    img = Image.open("gifs/"+str(i)+".gif")  
   
-
-
-
-
-###################################################
-###################################################
-
-
-
-def displayImgi(i):
-
-
-  img = Image.open("gifs/"+str(i)+".gif")
   img.show()
 
 
@@ -201,7 +194,7 @@ def checkStats(p): #function for checking stats
 
   t += (p.hp + p.atk + p.dfs + p.spatk + p.spdfs + p.spd)
   # Uncomment the line below by deleting the #
-  print("Total: ", t, "\n")
+  print(" Total: ", t, "\n")
 
   
 
@@ -368,7 +361,7 @@ while switch == True:
   if flag == True and int(ent) <= len(dex):
     print("\n")
     checkEntry(dex[int(ent)-1]) 
-    displayImgi(ent+1)
+    displayImg(int(ent))
     #since the array starts at 0, it checks whatever       the input is -1
     
   
@@ -381,7 +374,7 @@ while switch == True:
     for i in range(len(dex)-1):
       if (" " + ent).lower() == dex[i].name.lower():
         checkEntry(dex[i])
-        displayImgs(ent.lower())
+        displayImg(i+1)
     #since input is string otherwise, check if name matches    
 
 
