@@ -316,6 +316,20 @@ venusaur = Pokemon(types[4], types[13], natDex[3], 80, 82, 83, 100, 100, 80)
 
 charmander = Pokemon(types[2], types[0], natDex[4], 39, 52, 43, 60, 50, 65)
 
+charmeleon = Pokemon(types[2], types[0], natDex[5], 58, 64, 58, 80, 65, 80)
+
+charizard = Pokemon(types[2], types[10], natDex[6], 78, 84, 78, 109, 85, 100)
+
+squirtle = Pokemon(types[3], types[0], natDex[7], 44, 48, 65, 50, 64, 43)
+
+wartortle = Pokemon(types[3], types[0], natDex[8], 59, 63, 80, 65, 80, 58)
+
+blastoise = Pokemon(types[3], types[0], natDex[9], 79, 83, 100, 85, 105, 78)
+
+
+
+
+
 
 
 
@@ -324,7 +338,7 @@ charmander = Pokemon(types[2], types[0], natDex[4], 39, 52, 43, 60, 50, 65)
 ###################################################
 
 
-dex = [bulbasaur, ivysaur, venusaur, charmander]
+dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise]
 
 
 
@@ -371,7 +385,7 @@ while switch == True:
   
   if flag == False:
     print("\n")
-    for i in range(len(dex)-1):
+    for i in range(len(dex)):
       if (" " + ent).lower() == dex[i].name.lower():
         checkEntry(dex[i])
         displayImg(i+1)
