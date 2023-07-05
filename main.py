@@ -132,6 +132,36 @@ def weakness(type1, type2): #function for weakness
 ###################################################
 ###################################################
 
+def displayImgs(s):
+
+
+  img = Image.open("gifs/"+s+".gif")
+  img.show()
+
+  
+
+
+
+
+###################################################
+###################################################
+
+
+
+def displayImgi(i):
+
+
+  img = Image.open("gifs/"+str(i)+".gif")
+  img.show()
+
+
+
+
+
+###################################################
+###################################################
+
+
 
 
 
@@ -317,24 +347,33 @@ dex = [bulbasaur, ivysaur, venusaur, charmander]
 print(" Welcome to the National Dex\n", "Please input a name or dex number to get started\n")
 print(" Type 0 or stop to quit\n")
 
+
+
+
 while switch == True:
 
   ent = input(" Pokemon Name/Number: ")
 
-  if ent == 0 or str(ent).lower() == "stop":
+  if ent == 0 or str(ent).lower() == "stop": 
     exit()
 
   try:
       no = int(ent)
-      flag = True
+      flag = True #int input
   except ValueError:
-      flag = False
+      flag = False #string input
 
 
 
   if flag == True and int(ent) <= len(dex):
     print("\n")
-    checkEntry(dex[int(ent)-1])
+    checkEntry(dex[int(ent)-1]) 
+    displayImgi(ent+1)
+    #since the array starts at 0, it checks whatever       the input is -1
+    
+  
+    
+    
 
   
   if flag == False:
@@ -342,5 +381,7 @@ while switch == True:
     for i in range(len(dex)-1):
       if (" " + ent).lower() == dex[i].name.lower():
         checkEntry(dex[i])
+        displayImgs(ent.lower())
+    #since input is string otherwise, check if name matches    
 
 
