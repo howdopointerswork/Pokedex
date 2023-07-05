@@ -1,4 +1,5 @@
 from PIL import Image
+from replit import audio
 
 
 
@@ -134,7 +135,17 @@ def weakness(type1, type2): #function for weakness
 
 
 
-def displayImg(i):
+def display(i):
+
+  if i<10:
+    aud = audio.play_file("cries/00"+str(i)+".wav") 
+
+  elif i<100:
+    aud = audio.play_file("cries/0"+str(i)+".wav")
+
+  elif i>=100:
+    aud = audio.play_file("cries/"+str(i)+".wav") 
+  
 
   if i<10:
     img = Image.open("gifs/00"+str(i)+".gif") 
@@ -375,7 +386,7 @@ while switch == True:
   if flag == True and int(ent) <= len(dex):
     print("\n")
     checkEntry(dex[int(ent)-1]) 
-    displayImg(int(ent))
+    display(int(ent))
     #since the array starts at 0, it checks whatever       the input is -1
     
   
@@ -388,7 +399,5 @@ while switch == True:
     for i in range(len(dex)):
       if (" " + ent).lower() == dex[i].name.lower():
         checkEntry(dex[i])
-        displayImg(i+1)
+        display(i+1)
     #since input is string otherwise, check if name matches    
-
-
