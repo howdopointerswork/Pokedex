@@ -75,7 +75,7 @@ def checkName(p):
 
 def weakness(type1, type2): #function for weakness
 
-
+#May rework
   match type2:
 
     case "None": #If no dual type
@@ -266,7 +266,7 @@ switch = True
 
 
 #Put each pokemon in here, so we can use the array and dex number ~B-)>
-natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise"]
+natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise", " Caterpie", " Metapod", " Butterfree"]
 
 
 ###################################################
@@ -337,6 +337,14 @@ wartortle = Pokemon(types[3], types[0], natDex[8], 59, 63, 80, 65, 80, 58)
 
 blastoise = Pokemon(types[3], types[0], natDex[9], 79, 83, 100, 85, 105, 78)
 
+caterpie = Pokemon(types[12], types[0], natDex[10], 45, 30, 35, 20, 20, 45)
+
+metapod = Pokemon(types[12], types[0], natDex[11], 50, 20, 55, 25, 25, 30)
+
+butterfree = Pokemon(types[12], types[10], natDex[12], 60, 45, 50, 90, 80, 70)
+
+
+
 
 
 
@@ -349,7 +357,7 @@ blastoise = Pokemon(types[3], types[0], natDex[9], 79, 83, 100, 85, 105, 78)
 ###################################################
 
 
-dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise]
+dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree]
 
 
 
@@ -401,3 +409,5 @@ while switch == True:
         checkEntry(dex[i])
         display(i+1)
     #since input is string otherwise, check if name matches    
+
+
