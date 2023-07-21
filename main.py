@@ -54,7 +54,7 @@ class Pokemon: #Pokemon class
 ###################################################
 ###################################################
 
-#types = ["None","Normal", "Fire", "Water", "Grass", "Electric", "Fighting", "Psychic", "Dark", "Steel", "Flying", "Ice", "Bug", "Poison", "Ground", "Rock", "Ghost", "Dragon", "Fairy"]
+#types = ["None","Normal", "Fire", "Water", "Grass", "Electric", "Fighting", "Psychic", "Dark", "Steel", "Flying", "Ice", "Bug", "Poison", "Ground", "Rock", "Ghost", "Dragon"]
 
 
 def checkName(p):
@@ -126,9 +126,83 @@ def weakness(type1, type2): #function for weakness
 
           print("Grass\n", "Water\n", "Fighting\n", "Steel\n", "Ground\n")
 
+        case "Poison": #Poison/None
+          
+          print(" Psychic\n", "Ground\n")
+
+        case "Flying": #Flying/None
+          
+          print(" Electric\n", "Ice\n", "Rock\n")
+
+        case "Bug": #Bug/None
+          
+          print(" Rock\n", "Flying\n", "Fire\n")
         
+        case "Ice": #Ice/None
+           print(" Rock\n", "Fire\n", "Steel\n", "Fighting\n")
+
+        case "Dragon": #Dragon/None
+           
+          print(" Dragon\n", "Ice\n")
+           
+        case "Ghost": #Ghost/None
+          
+          print(" Ghost\n", "Dark\n")
           
 
+  
+
+    case "Normal": #Dual type is Normal
+
+      match type1:
+
+        case "Fire": #Fire/Normal
+
+           print(" Water\n", "Fighting\n", "Ground\n", "Rock\n")
+
+        case "Water": #Water/Normal
+  
+          print(" Grass\n", "Electric\n", "Fighting\n")
+
+        case "Grass": #Grass/Normal
+
+          print(" Fire\n", "Flying\n", "Ice\n", "Bug\n", "Poison\n")
+
+
+
+
+
+
+
+
+
+
+#Checklist for types
+
+#___/Normal type:
+                
+#Normal - N/A
+#Fire - Y
+#Water - Y
+#Grass - Y
+#Electric - N
+#Psychic - N
+#Dark - N
+#Steel - N
+#Fighting - N
+#Ground - N
+#Rock - N
+#Poison - N
+#Flying - N
+#Ice - N
+#Dragon - N
+#Ghost - N
+#Bug - N
+
+
+
+
+      
 ###################################################
 ###################################################
 
@@ -205,7 +279,7 @@ def checkStats(p): #function for checking stats
 
   t += (p.hp + p.atk + p.dfs + p.spatk + p.spdfs + p.spd)
   # Uncomment the line below by deleting the #
-  print(" Total: ", t, "\n")
+  print(" Total:", t, "\n")
 
   
 
@@ -259,14 +333,17 @@ def checkEntry(p):
 ###################################################
 
 
-types = ["None","Normal", "Fire", "Water", "Grass", "Electric", "Fighting", "Psychic", "Dark", "Steel", "Flying", "Ice", "Bug", "Poison", "Ground", "Rock", "Ghost", "Dragon", "Fairy"]
+types = ["None","Normal", "Fire", "Water", "Grass", "Electric", "Fighting", "Psychic", "Dark", "Steel", "Flying", "Ice", "Bug", "Poison", "Ground", "Rock", "Ghost", "Dragon"]
 
 flag = False
 switch = True
 
 
 #Put each pokemon in here, so we can use the array and dex number ~B-)>
-natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise", " Caterpie", " Metapod", " Butterfree"]
+
+#Space before every name
+
+natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise", " Caterpie", " Metapod", " Butterfree", " Weedle"]
 
 
 ###################################################
@@ -314,7 +391,6 @@ natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charm
 
 #  n = 17   Dragon
 
-#  n = 18   Fairy
 
 #--------------------------------------------------#
 
@@ -343,6 +419,8 @@ metapod = Pokemon(types[12], types[0], natDex[11], 50, 20, 55, 25, 25, 30)
 
 butterfree = Pokemon(types[12], types[10], natDex[12], 60, 45, 50, 90, 80, 70)
 
+weedle = Pokemon(types[12], types[13], natDex[13], 40, 35, 30, 20, 20, 50)
+
 
 
 
@@ -357,7 +435,7 @@ butterfree = Pokemon(types[12], types[10], natDex[12], 60, 45, 50, 90, 80, 70)
 ###################################################
 
 
-dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree]
+dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle]
 
 
 
