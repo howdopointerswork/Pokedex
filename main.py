@@ -2,6 +2,17 @@ from PIL import Image
 from replit import audio
 
 
+###################################################
+###################Ideas###########################
+###################################################
+
+#Implement Type Calculator
+
+#For Resistance function, copy Weakness function code and change prints
+
+#Evolutionary tree/chain + what level/method they evolve by
+
+
 
 ###################################################
 ################### Bugs ##########################
@@ -343,7 +354,7 @@ switch = True
 
 #Space before every name
 
-natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise", " Caterpie", " Metapod", " Butterfree", " Weedle"]
+natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charmeleon", " Charizard", " Squirtle", " Wartortle", " Blastoise", " Caterpie", " Metapod", " Butterfree", " Weedle", " Kakuna", " Beedrill"]
 
 
 ###################################################
@@ -421,11 +432,9 @@ butterfree = Pokemon(types[12], types[10], natDex[12], 60, 45, 50, 90, 80, 70)
 
 weedle = Pokemon(types[12], types[13], natDex[13], 40, 35, 30, 20, 20, 50)
 
+kakuna = Pokemon(types[12], types [13], natDex[14], 45, 25, 50, 25, 25, 35)
 
-
-
-
-
+beedrill = Pokemon(types[12], types[13], natDex[15], 65, 90, 40, 45, 80, 75)
 
 
 
@@ -435,7 +444,7 @@ weedle = Pokemon(types[12], types[13], natDex[13], 40, 35, 30, 20, 20, 50)
 ###################################################
 
 
-dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle]
+dex = [bulbasaur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, caterpie, metapod, butterfree, weedle, kakuna, beedrill]
 
 
 
@@ -487,5 +496,3 @@ while switch == True:
         checkEntry(dex[i])
         display(i+1)
     #since input is string otherwise, check if name matches    
-
-
