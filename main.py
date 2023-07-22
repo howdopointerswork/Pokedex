@@ -223,310 +223,1023 @@ def weakness(type1, type2): #function for weakness
 
    ##################  
 
-     case "Fire": #Dual type is Fire
+    case "Fire": #Dual type is Fire
 
-       match type1:
+      match type1:
 
-          case "Normal": #Normal/Fire
+        case "Normal": #Normal/Fire
 
-            print(" Water\n", "Fighting\n", "Ground\n", "Rock\n")
+           print(" Water\n", "Fighting\n", "Ground\n", "Rock\n")
 
-          case "Water": #Water/Fire
+        case "Water": #Water/Fire
 
-            print(" Electric\n", "Ground\n", "Rock\n")
+           print(" Electric\n", "Ground\n", "Rock\n")
 
-          case "Grass": #Grass/Fire
+        case "Grass": #Grass/Fire
 
-            print(" Flying\n", "Poison\n")
+          print(" Flying\n", "Poison\n")
 
-          case "Electric": #Electric/Fire
+        case "Electric": #Electric/Fire
 
-            print(" Water\n", "Ground\n", "Rock\n")
+          print(" Water\n", "Ground\n", "Rock\n")
 
-          case "Psychic": #Psychic/Fire
+        case "Psychic": #Psychic/Fire
 
-            print(" Water\n", "Dark\n", "Ground\n", "Rock\n", "Ghost\n")
+          print(" Water\n", "Dark\n", "Ground\n", "Rock\n", "Ghost\n")
 
-          case "Dark": #Dark/Fire
+        case "Dark": #Dark/Fire
 
-            print(" Water\n", "Fighting\n", "Ground\n", "Rock\n")
+          print(" Water\n", "Fighting\n", "Ground\n", "Rock\n")
 
-          case "Steel": #Steel/Fire
+        case "Steel": #Steel/Fire
 
-            print(" Water\n", "Fighting\n", "Ground\n")
+          print(" Water\n", "Fighting\n", "Ground\n")
 
-          case "Fighting": #Fighting/Fire
-            print("Water\n", "Flying\n", "Psychic\n", "Ground\n")
+        case "Fighting": #Fighting/Fire
+          
+          print("Water\n", "Flying\n", "Psychic\n", "Ground\n")
 
-          case "Ground": #Ground/Fire
-            print(" Water\n", "Ground\n")
+        case "Ground": #Ground/Fire
+          
+          print(" Water\n", "Ground\n")
 
-          case "Rock": #Rock/Normal
-            print(" Water\n", "Ground\n", "Rock\n", "Fighting\n")
+        case "Rock": #Rock/Normal
+        
+          print(" Water\n", "Ground\n", "Rock\n", "Fighting\n")
 
-          case "Poison": #Poison/Fire
-            print(" Water\n", "Ground\n", "Psychic\n", "Rock\n")
+        case "Poison": #Poison/Fire
+          
+          print(" Water\n", "Ground\n", "Psychic\n", "Rock\n")
 
-          case "Flying": #Flying/Fire
-            print(" Water\n", "Rock\n", "Electric\n")
+        case "Flying": #Flying/Fire
+          
+          print(" Water\n", "Rock\n", "Electric\n")
 
-          case "Ice": #Ice/Fire
-            print(" Water\n", "Rock\n", "Ground\n", "Fighting\n")
+        case "Ice": #Ice/Fire
+           print(" Water\n", "Rock\n", "Ground\n", "Fighting\n")
 
-          case "Dragon": #Dragon/Fire
-            print(" Rock\n", "Ground\n", "Dragon\n")
+        case "Dragon": #Dragon/Fire
+          
+          print(" Rock\n", "Ground\n", "Dragon\n")
 
-          case "Ghost": #Ghost/Fire
-            print(" Water\n", "Ground\n", "Rock\n", "Ghost\n", "Dark\n")
+          
+        case "Ghost": #Ghost/Fire
+          
+          print(" Water\n", "Ground\n", "Rock\n", "Ghost\n", "Dark\n")
 
-          case "Bug": #Bug/Fire
-            print(" Water\n", "Rock\n", "Flying\n")
+        case "Bug": #Bug/Fire
+           
+          print(" Water\n", "Rock\n", "Flying\n")
 
         ##################  
 
-     case "Water": #Dual type is Water
+    case "Water": #Dual type is Water
 
-       match type1:
+      match type1:
 
-          case "Normal": #Normal/Water
+        case "Normal": #Normal/Water
 
-            print(" Electric\n", "Grass\n", "Fighting\n")
+          print(" Electric\n", "Grass\n", "Fighting\n")
 
-          case "Fire": #Fire/Water
+        case "Fire": #Fire/Water
 
-            print(" Electric\n", "Ground\n", "Rock\n")
+           print(" Electric\n", "Ground\n", "Rock\n")
 
-          case "Grass": #Grass/Water
+        case "Grass": #Grass/Water
 
-            print(" Flying\n", "Poison\n", "Bug\n")
+          print(" Flying\n", "Poison\n", "Bug\n")
 
-          case "Electric": #Electric/Water
+        case "Electric": #Electric/Water
 
-            print(" Grass\n", "Ground\n")
+          print(" Grass\n", "Ground\n")
 
-          case "Psychic": #Psychic/Water
+        case "Psychic": #Psychic/Water
 
-            print(" Electric\n", "Grass\n", "Dark\n", "Ghost\n")
+          print(" Electric\n", "Grass\n", "Dark\n", "Ghost\n")
 
-          case "Dark": #Dark/Water
+        case "Dark": #Dark/Water
 
-            print(" Electirc\n", "Grass\n","Fighting\n", "Bug\n")
+          print(" Electirc\n", "Grass\n","Fighting\n", "Bug\n")
 
-          case "Steel": #Steel/Water
+        case "Steel": #Steel/Water
 
-            print(" Electric\n","Fighting\n", "Ground\n")
+          print(" Electric\n","Fighting\n", "Ground\n")
 
-          case "Fighting": #Fighting/Water
-            print(" Electric\n", "Grass\n", "Flying\n", "Psychic\n")
+        case "Fighting": #Fighting/Water
+           
+          print(" Electric\n", "Grass\n", "Flying\n", "Psychic\n")
 
-          case "Ground": #Ground/Water
-            print(" Grass\n")
+        case "Ground": #Ground/Water
+          
+          print(" Grass\n")
 
-          case "Rock": #Rock/Water
-            print(" Electric\n", "Grass\n", "Ground\n", "Fighting\n")
+        case "Rock": #Rock/Water
+          
+          print(" Electric\n", "Grass\n", "Ground\n", "Fighting\n")
 
-          case "Poison": #Poison/Water
-            print(" Electirc\n", "Ground\n", "Psychic\n")
+        case "Poison": #Poison/Water
+          
+          print(" Electirc\n", "Ground\n", "Psychic\n")
 
-          case "Flying": #Flying/Water
-            print(" Electric\n", "Rock\n")
+        case "Flying": #Flying/Water
+          
+          print(" Electric\n", "Rock\n")
 
-          case "Ice": #Ice/Water
-            print(" Electric\n", "Grass\n", "Rock\n", "Fighting\n")
+        case "Ice": #Ice/Water
+          
+          print(" Electric\n", "Grass\n", "Rock\n", "Fighting\n")
 
-          case "Dragon": #Dragon/Water
-            print(" Dragon\n")
+        case "Dragon": #Dragon/Water
+          
+          print(" Dragon\n")
 
-          case "Ghost": #Ghost/Water
-            print(" Electric", "Grass\n", "Ghost\n", "Dark\n")
+        case "Ghost": #Ghost/Water
+          
+          print(" Electric", "Grass\n", "Ghost\n", "Dark\n")
 
-          case "Bug": #Bug/Water
-            print(" Electric\n", "Rock\n", "Flying\n")
+        case "Bug": #Bug/Water
+          
+          print(" Electric\n", "Rock\n", "Flying\n")
           
           ##################  
 
-     case "Grass": #Dual type is Grass
+    case "Grass": #Dual type is Grass
 
-       match type1:
+      match type1:
 
-          case "Normal": #Normal/Grass
+        case "Normal": #Normal/Grass
 
-            print(" Fire\n", "Bug\n", "Poison\n", "Ice\n", "Flying", "Fighting\n")
+           print(" Fire\n", "Bug\n", "Poison\n", "Ice\n", "Flying", "Fighting\n")
 
-          case "Fire": #Fire/Grass
+        case "Fire": #Fire/Grass
 
-            print(" Flying\n", "Poison\n", "Rock\n")
+          print(" Flying\n", "Poison\n", "Rock\n")
 
-          case "Water": #Water/Grass
+        case "Water": #Water/Grass
 
-            print(" Flying\n", "Poison\n", "Bug\n")
+          print(" Flying\n", "Poison\n", "Bug\n")
 
-          case "Electric": #Electric/Grass
+        case "Electric": #Electric/Grass
 
-            print(" Fire\n", "Poison\n", "Bug\n", "Ice\n")
+          print(" Fire\n", "Poison\n", "Bug\n", "Ice\n")
 
-          case "Psychic": #Psychic/Grass
+        case "Psychic": #Psychic/Grass
 
-            print(" Fire", "Poison", "Bug\n", "Ice\n", "Flying\n", "Dark\n", "Ghost\n")
+          print(" Fire", "Poison", "Bug\n", "Ice\n", "Flying\n", "Dark\n", "Ghost\n")
             
-          case "Dark": #Dark/Grass
+        case "Dark": #Dark/Grass
 
-            print(" Fire\n", "Poison\n", "Bug\n", "Ice", "Flying", "Fighting\n")
+          print(" Fire\n", "Poison\n", "Bug\n", "Ice", "Flying", "Fighting\n")
             
-          case "Steel": #Steel/Grass
+        case "Steel": #Steel/Grass
 
-            print(" Fire\n","Fighting\n")
+          print(" Fire\n","Fighting\n")
 
-          case "Fighting": #Fighting/Grass
-            print(" Fire\n", "Poison\n", "Flying\n", "Ice\n", "Psychic\n")
+        case "Fighting": #Fighting/Grass
+            
+          print(" Fire\n", "Poison\n", "Flying\n", "Ice\n", "Psychic\n")
 
-          case "Ground": #Ground/Grass
-            print(" Fire\n", "Flying\n", "Ice\n", "Bug\n")
+        case "Ground": #Ground/Grass
+            
+          print(" Fire\n", "Flying\n", "Ice\n", "Bug\n")
 
-          case "Rock": #Rock/Grass
-            print(" Fighting\n", "Bug\n", "Steel\n")
+        case "Rock": #Rock/Grass
+            
+          print(" Fighting\n", "Bug\n", "Steel\n")
 
-          case "Poison": #Poison/Grass
-            print(" Fire\n","Flying\n", "Ice\n", "Psychic\n")
+        case "Poison": #Poison/Grass
+            
+          print(" Fire\n","Flying\n", "Ice\n", "Psychic\n")
 
-          case "Flying": #Flying/Grass
-            print(" Fire\n", "Poison\n", "Flying\n", "Ice\n", "Rock\n")
+        case "Flying": #Flying/Grass
+            
+          print(" Fire\n", "Poison\n", "Flying\n", "Ice\n", "Rock\n")
 
-          case "Ice": #Ice/Grass
-            print(" Fire\n", "Poison\n", "Flying\n", "Bug\n", "Rock\n", "Fighting\n", "Steel\n")
+        case "Ice": #Ice/Grass
+           
+          print(" Fire\n", "Poison\n", "Flying\n", "Bug\n", "Rock\n", "Fighting\n", "Steel\n")
 
-          case "Dragon": #Dragon/Grass
-            print(" Poison\n", "Bug\n", "Flying\n", "Ice\n", "Dragon")
+        case "Dragon": #Dragon/Grass
+            
+          print(" Poison\n", "Bug\n", "Flying\n", "Ice\n", "Dragon")
 
-          case "Ghost": #Ghost/Grass
-            print(" Fire\n", "Flying\n", "Ice\n", "Ghost\n", "Dark\n")
+        case "Ghost": #Ghost/Grass
+           
+          print(" Fire\n", "Flying\n", "Ice\n", "Ghost\n", "Dark\n")
 
-          case "Bug": #Bug/Grass
-            print(" Fire\n", "Bug\n", "Ice\n", "Rock\n", "Flying\n")  
+        case "Bug": #Bug/Grass
+           
+          print(" Fire\n", "Bug\n", "Ice\n", "Rock\n", "Flying\n")  
 
           ##################  
 
-     case "Electric": #Dual type is Electric
+    case "Electric": #Dual type is Electric
+      match type1:
 
-       match type1:
+        case "Normal": #Normal/Electric
 
-          case "Normal": #Normal/Electric
+          print(" Ground\n", "Fighting\n")
 
-            print(" Ground\n", "Fighting\n")
+        case "Fire": #Fire/Electric
 
-          case "Fire": #Fire/Electric
+          print(" Ground\n", "Water\n", "Rock\n")
 
-            print(" Ground\n", "Water\n", "Rock\n")
+        case "Water": #Water/Electric
 
-          case "Water": #Water/Electric
+           print(" Ground", "Grass\n")
 
-            print(" Ground", "Grass\n")
+        case "Grass": #Grass/Electric
 
-          case "Grass": #Grass/Electric
+          print(" Fire\n", "Poison\n", "Bug\n", "Ice\n")
 
-            print(" Fire\n", "Poison\n", "Bug\n", "Ice\n")
+        case "Psychic": #Psychic/Electric
 
-          case "Psychic": #Psychic/Electric
-
-            print(" Ground\n" , "Dark\n", "Ghost\n")
+          print(" Ground\n" , "Dark\n", "Ghost\n")
             
-          case "Dark": #Dark/Electric
+        case "Dark": #Dark/Electric
 
-            print(" Ground\n", "Bug\n", "Fighting\n")
+          print(" Ground\n", "Bug\n", "Fighting\n")
             
-          case "Steel": #Steel/Electric
+        case "Steel": #Steel/Electric
 
-            print(" Ground\n",  "Fire\n", "Fighting\n")
+          print(" Ground\n",  "Fire\n", "Fighting\n")
 
-          case "Fighting": #Fighting/Electric
-            print(" Ground\n", "Psychic\n")
+        case "Fighting": #Fighting/Electric
+           print(" Ground\n", "Psychic\n")
 
-          case "Ground": #Ground/Electric
-            print(" Ground\n", "Water\n", "Grass\n", "Ice\n")
+        case "Ground": #Ground/Electric
+         
+          print(" Ground\n", "Water\n", "Grass\n", "Ice\n")
 
-          case "Rock": #Rock/Electric
-            print(" Ground\n", "Fighting", "Water\n", "Grass\n")
+        case "Rock": #Rock/Electric
+          
+          print(" Ground\n", "Fighting", "Water\n", "Grass\n")
 
-          case "Poison": #Poison/Electric
-            print(" Ground\n", "Psychic\n")
+        case "Poison": #Poison/Electric
+            
+          print(" Ground\n", "Psychic\n")
 
-          case "Flying": #Flying/Electric
-            print(" Ice\n", "Rock\n")
+        case "Flying": #Flying/Electric
+           
+          print(" Ice\n", "Rock\n")
 
-          case "Ice": #Ice/Electric
-            print(" Ground\n", "Fire\n", "Rock\n", "Fighting\n")
+        case "Ice": #Ice/Electric
+            
+          print(" Ground\n", "Fire\n", "Rock\n", "Fighting\n")
 
-          case "Dragon": #Dragon/Electric
-            print(" Ground\n", "Ice\n", "Dragon")
+        case "Dragon": #Dragon/Electric
+            
+          print(" Ground\n", "Ice\n", "Dragon")
 
-          case "Ghost": #Ghost/Electric
-            print(" Ground\n", "Ghost\n", "Dark\n")
+        case "Ghost": #Ghost/Electric
+          
+          print(" Ground\n", "Ghost\n", "Dark\n")
 
-          case "Bug": #Bug/Electric
-            print(" Fire\n", "Rock\n")  
+        case "Bug": #Bug/Electric
+            
+          print(" Fire\n", "Rock\n")  
 
           ##################  
 
-     case "Psychic": #Dual type is Psychic
+    case "Psychic": #Dual type is Psychic
 
-       match type1:
+      match type1:
 
-          case "Normal": #Normal/Psychic
+        case "Normal": #Normal/Psychic
 
-            print(" Dark\n", "Bug\n")
+          print(" Dark\n", "Bug\n")
 
-          case "Fire": #Fire/Psychic
+        case "Fire": #Fire/Psychic
 
-            print(" Dark", "Ghost", "Ground\n", "Water\n", "Rock\n")
+          print(" Dark", "Ghost", "Ground\n", "Water\n", "Rock\n")
 
-          case "Water": #Water/Psychic
+        case "Water": #Water/Psychic
 
-            print(" Dark\n", "Ghost\n", "Grass\n", "Electric\n", "Bug\n")
+          print(" Dark\n", "Ghost\n", "Grass\n", "Electric\n", "Bug\n")
 
-          case "Grass": #Grass/Psychic
+        case "Grass": #Grass/Psychic
 
-            print(" Dark\n", "Ghost\n", "Fire\n", "Poison\n", "Bug\n", "Ice\n", "Flying\n")
+          print(" Dark\n", "Ghost\n", "Fire\n", "Poison\n", "Bug\n", "Ice\n", "Flying\n")
 
-          case "Psychic": #Electric/Psychic
 
-            print(" Dark\n" , "Ground\n", "Ghost\n", "Bug\n")
+        case "Electric": #Electric/Psychic
+
+          print(" Dark\n" , "Ground\n", "Ghost\n", "Bug\n")
             
-          case "Dark": #Dark/Psychic
+        case "Dark": #Dark/Psychic
 
-            print(" Bug\n")
+          print(" Bug\n")
             
-          case "Steel": #Steel/Psychic
+        case "Steel": #Steel/Psychic
 
-            print(" Ground\n",  "Fire\n")
+          print(" Ground\n",  "Fire\n")
 
-          case "Fighting": #Fighting/Psychic
-            print(" Ghost\n", "Flying\n")
+        case "Fighting": #Fighting/Psychic
+          print(" Ghost\n", "Flying\n")
 
-          case "Ground": #Ground/Psychic
-            print(" Dark\n", "Ghost\n", "Water\n", "Grass\n", "Ice\n", "Bug\n")
+        case "Ground": #Ground/Psychic
+            
+          print(" Dark\n", "Ghost\n", "Water\n", "Grass\n", "Ice\n", "Bug\n")
 
-          case "Rock": #Rock/Psychic
-            print(" Dark\n", "Ghost\n", "Water\n", "Grass\n", "Ground\n", "Steel\n")
+        case "Rock": #Rock/Psychic
+            
+          print(" Dark\n", "Ghost\n", "Water\n", "Grass\n", "Ground\n", "Steel\n")
 
-          case "Poison": #Poison/Psychic
-            print(" Dark\n", "Ghost\n", "Ground\n")
+        case "Poison": #Poison/Psychic
+            
+          print(" Dark\n", "Ghost\n", "Ground\n")
 
-          case "Flying": #Flying/Psychic
-            print(" Dark/n", "Ghost\n", "Ice\n", "Rock\n", "Electric")
+        case "Flying": #Flying/Psychic
+            
+          print(" Dark/n", "Ghost\n", "Ice\n", "Rock\n", "Electric")
 
-          case "Ice": #Ice/Psychic
-            print(" Dark\n", "Ghost\n", "Fire\n", "Rock\n", "Steel\n", "Bug\n")
+        case "Ice": #Ice/Psychic
+            
+          print(" Dark\n", "Ghost\n", "Fire\n", "Rock\n", "Steel\n", "Bug\n")
 
-          case "Dragon": #Dragon/Psychic
-            print(" Dark", "Ghost\n", "Bug\n", "Ice\n", "Dragon\n")
+        case "Dragon": #Dragon/Psychic
+            
+          print(" Dark", "Ghost\n", "Bug\n", "Ice\n", "Dragon\n")
 
-          case "Ghost": #Ghost/Psychic
-            print(" Dark\n", "Ghost\n")
+        case "Ghost": #Ghost/Psychic
+            
+          print(" Dark\n", "Ghost\n")
 
-          case "Bug": #Bug/Psychic
-            print(" Dark/n", "Ghost","Bug\n", "Fire\n", "Rock\n", "Flying\n")  
+        case "Bug": #Bug/Psychic
+            
+          print(" Dark/n", "Ghost","Bug\n", "Fire\n", "Rock\n", "Flying\n")
 
+          ##################  
 
+    case "Dark": #Dual type is Dark
+
+      match type1:
+
+        case "Normal": #Normal/Dark
+
+          print(" Fighting\n", "Bug\n")
+
+        case "Fire": #Fire/Dark
+
+          print(" Fighting\n","Ground\n", "Water\n", "Rock\n")
+
+        case "Water": #Water/Dark
+            
+          print(" Bug\n", "Fighting\n", "Grass\n", "Electric\n")
+
+        case "Grass": #Grass/Dark
+
+          print(" Fighting\n", "Fire\n", "Poison\n", "Bug\n", "Ice\n", "Flying\n")
+
+        case "Electric": #Electric/Dark
+
+          print(" Fighting\n" , "Ground\n", "Ghost\n", "Bug\n")
+            
+        case "Psychic": #Psychic/Dark
+
+           print(" Bug\n")
+            
+        case "Steel": #Steel/Dark
+
+          print(" Fighting\n", "Fire\n", "Ground\n")
+
+        case "Fighting": #Fighting/Dark
+     
+          print(" Fighting\n", "Flying\n")
+
+        case "Ground": #Ground/Dark
+      
+          print(" Fighting\n", "Bug\n", "Water\n", "Grass\n", "Ice\n")
+
+        case "Rock": #Rock/Dark
+   
+          print(" Fighting\n", "Bug\n","Water\n", "Grass\n", "Ground\n", "Steel\n")
+
+        case "Poison": #Poison/Dark
+   
+           print(" Ground\n")
+
+        case "Flying": #Flying/Dark
+   
+           print(" Ice\n", "Rock\n", "Electric\n")
+
+        case "Ice": #Ice/Dark
+    
+          print(" Fighting\n", "Fire\n", "Rock\n", "Steel\n", "Bug\n")
+
+        case "Dragon": #Dragon/Dark
+   
+          print(" Fighting\n", "Bug\n", "Ice\n", "Dragon\n")
+
+        case "Ghost": #Ghost/Dark
+  
+          print(" None\n")
+
+        case "Bug": #Bug/Dark
+  
+           print(" Bug\n", "Fire\n", "Rock\n", "Flying\n")      
+
+  ##################  
+
+    case "Steel": #Dual type is Steel
+
+      match type1:
+
+        case "Normal": #Normal/Steel
+
+          print(" Fighting\n", "Fire\n", "Ground\n")
+
+        case "Fire": #Fire/Steel
+
+          print(" Fighting\n","Ground\n", "Water\n")
+
+        case "Water": #Water/Steel
+            
+          print(" Fighting\n", "Ground\n", "Electric\n")
+
+        case "Grass": #Grass/Steel
+
+          print(" Fighting\n", "Fire\n")
+
+        case "Electric": #Electric/Steel
+
+          print(" Fighting\n" , "Ground\n", "Fire\n")
+            
+        case "Psychic": #Psychic/Steel
+
+          print(" Fire\n", "Ground\n")
+            
+        case "Dark": #Dark/Steel
+
+          print(" Fighting\n", "Fire\n", "Ground\n")
+
+        case "Fighting": #Fighting/Steel
+            
+          print(" Fighting\n", "Fire\n", "Ground\n")
+
+        case "Ground": #Ground/Steel
+            
+          print(" Fighting\n", "Water\n", "Fire\n")
+
+        case "Rock": #Rock/Steel
+            
+          print(" Fighting\n", "Water\n" ,"Ground\n")
+
+        case "Poison": #Poison/Steel
+            
+          print(" Ground\n", "Fire\n")
+
+        case "Flying": #Flying/Steel
+            
+          print(" Fire\n","Electric\n")
+
+        case "Ice": #Ice/Steel
+            
+          print(" Fighting\n", "Fire\n", "Ground\n" )
+
+        case "Dragon": #Dragon/Steel
+            
+          print(" Fighting\n","Ground\n")
+
+        case "Ghost": #Ghost/Steel
+            
+          print(" Fire\n", "Ground\n")
+
+        case "Bug": #Bug/Steel
+          print(" Fire\n")    
+         
+  ##################  
+
+    case "Ground": #Dual type is Ground
+
+      match type1:
+
+        case "Normal": #Normal/Ground
+
+          print(" Water\n", "Grass\n", "Ice\n", "Fighting\n")
+
+        case "Fire": #Fire/Ground
+
+          print(" Water\n", "Ground\n")
+
+        case "Water": #Water/Ground
+          print(" Grass\n")
+
+        case "Grass": #Grass/Ground
+
+          print(" Ice\n", "Fire\n", "Bug\n", "Flying\n")
+
+        case "Psychic": #Psychic/Ground
+
+          print(" Water\n" , "Grass\n", "Ice\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Ground
+
+          print(" Water\n", "Grass\n", "Ice\n", "Fighting\n", "Bug\n")
+            
+        case "Steel": #Steel/Ground
+
+          print(" Water\n", "Ground\n", "Fire\n", "Fighting\n")
+
+        case "Fighting": #Fighting/Ground
+     
+          print(" Water\n", "Grass\n", "Ice\n", "Psychic\n", "Flying\n" )
+
+        case "Rock": #Rock/Ground
+          
+          print(" Water\n" ,"Ice\n", "Grass\n", "Fighting\n", "Steel\n")
+
+        case "Poison": #Poison/Ground
+          
+          print(" Water\n", "Ice\n", "Psychic\n", "Ground\n")
+
+        case "Flying": #Flying/Ground
+          
+          print(" Water\n", "Ice\n")
+
+        case "Ice": #Ice/Ground
+          
+          print(" Water\n", "Grass\n", "Fire\n", "Steel\n", "Fighting\n" )
+
+        case "Dragon": #Dragon/Ground
+          
+          print(" Ice\n", "Dragon\n")
+
+        case "Ghost": #Ghost/Ground
+         
+          print(" Water\n", "Grass\n", "Ice\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Ground
+          
+          print(" Water\n", "Ice\n", "Fire\n", "Flying\n")
+
+  ##################  
+
+    case "Rock": #Dual type is Rock
+
+      match type1:
+
+        case "Normal": #Normal/Rock
+
+          print(" Water\n", "Grass\n", "Steel\n", "Fighting\n", "Ground\n")
+
+        case "Fire": #Fire/Rock
+
+          print(" Water\n", "Ground\n", "Fighting\n", )
+
+        case "Water": #Water/Rock
+            
+          print(" Grass\n", "Electric\n", "Fighting\n", "Ground\n")
+
+        case "Grass": #Grass/Rock
+
+          print(" Ice\n", "Fighting\n", "Bug\n", "Steel\n" )
+
+        case "Psychic": #Psychic/Rock
+
+          print(" Water\n" , "Grass\n", "Steel\n", "Ground\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Rock
+
+           print(" Water\n", "Grass\n", "Ice\n", "Fighting\n", "Bug\n")
+            
+        case "Steel": #Steel/Rock
+
+          print(" Water\n", "Ground\n", "Fire\n", "Fighting\n")
+
+        case "Fighting": #Fighting/Rock
+     
+           print(" Water\n", "Grass\n", "Fighting\n", "Ground\n","Psychic\n", "Steel\n" )
+
+        case "Ground": #Ground/Rock
+         
+          print(" Water\n" ,"Ice\n", "Grass\n", "Fighting\n", "Steel\n")
+
+        case "Poison": #Poison/Rock
+         
+           print(" Water\n", "Steel\n", "Psychic\n", "Ground\n")
+
+        case "Flying": #Flying/Rock
+        
+          print(" Water\n", "Steel\n", "Electric\n", "Rock\n", "Ice\n")
+
+        case "Ice": #Ice/Rock
+         
+          print(" Water\n", "Grass\n", "Steel\n", "Ground\n", "Fighting\n" )
+
+        case "Dragon": #Dragon/Rock
+         
+           print(" Ground\n", "Fighting\n", "Steel\n", "Ice\n", "Dragon\n")
+
+        case "Ghost": #Ghost/Rock
+    
+           print(" Water\n", "Grass\n", "Steel\n", "Ground\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Rock
+  
+           print(" Water\n", "Rock\n", "Steel\n")
+
+  ##################  
+
+    case "Poison": #Dual type is Poison
+
+     match type1:
+
+        case "Normal": #Normal/Poison
+
+          print(" Ground\n", "Psychic\n")
+
+        case "Fire": #Fire/Poison
+
+          print(" Water\n", "Ground\n", "Rock\n", "Psychic\n")
+
+        case "Water": #Water/Poison
+            
+          print(" Psychic\n", "Electric\n", "Ground\n")
+
+        case "Grass": #Grass/Poison
+
+          print(" Psychic\n", "Flying\n", "Fire\n", "Ice\n")
+
+        case "Electric": #Electric/Poison
+            
+          print(" Ground\n", "Psychic\n")
+
+        case "Psychic": #Psychic/Poison
+
+          print("Ground\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Poison
+
+           print(" Ground\n")
+            
+        case "Steel": #Steel/Poison
+
+          print(" Ground\n", "Fire\n")
+
+        case "Fighting": #Fighting/Poison
+     
+           print(" Ground\n","Psychic\n", "Flying\n")
+
+        case "Ground": #Ground/Poison
+          print(" Water\n" ,"Ice\n", "Psychic\n", "Ground\n")
+
+        case "Rock": #Rock/Poison
+           
+          print(" Water\n", "Steel\n", "Psychic\n", "Ground\n")
+
+        case "Flying": #Flying/Poison
+          
+          print(" Psychic\n", "Electric\n", "Rock\n", "Ice\n")
+
+        case "Ice": #Ice/Poison
+          
+          print(" Psychic\n", "Ground\n", "Fire\n", "Steel\n")
+
+        case "Dragon": #Dragon/Poison
+          
+          print(" Psychic\n", "Ground\n", "Ice\n", "Dragon\n")
+
+        case "Ghost": #Ghost/Poison
+        
+          print(" Psychic\n", "Ground\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Poison
+         
+          print(" Psychic\n", "Rock\n", "Flying\n", "Fire\n")
+
+  ##################  
+
+    case "Flying": #Dual type is Flying
+
+      match type1:
+
+        case "Normal": #Normal/Flying
+
+          print(" Electric\n", "Rock\n", "Ice\n")
+
+        case "Fire": #Fire/Flying
+
+          print(" Electric\n", "Water\n", "Rock\n")
+
+        case "Water": #Water/Flying
+            
+          print(" Electric\n", "Rock\n")
+
+        case "Grass": #Grass/Flying
+
+          print(" Ice\n", "Flying\n", "Fire\n", "Poison\n", "Rock\n")
+
+        case "Psychic": #Psychic/Flying
+
+          print(" Electric\n", "Ice\n", "Rock\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Flying
+
+          print(" Electric\n", "Ice\n", "Rock\n")
+            
+        case "Steel": #Steel/Flying
+
+          print(" Electric\n", "Fire\n")
+
+        case "Fighting": #Fighting/Flying
+     
+          print(" Electric\n", "Ice\n", "Flying\n", "Psychic\n" )
+
+        case "Ground": #Ground/Flying
+   
+          print(" Ice\n", "Water\n")
+
+  
+        case "Rock": #Rock/Flying
+    
+          print(" Electric\n", "Ice\n", "Rock\n", "Steel\n", "Water\n")
+
+        case "Poison": #Poison/Flying
+   
+          print(" Psychic\n", "Electric\n", "Rock\n", "Ice\n")
+
+        case "Ice": #Ice/Flying
+          
+          print(" Electric\n", "Rock\n" "Fire\n", "Steel\n")
+
+        case "Dragon": #Dragon/Flying
+      
+          print(" Rock\n", "Ice\n", "Dragon\n")
+
+        case "Ghost": #Ghost/Flying
+   
+          print(" Electric\n", "Ice\n", "Rock\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Flying
+   
+          print(" Electric\n", "Ice\n", "Rock\n", "Flying\n", "Fire\n")
+
+  ##################  
+
+    case "Ice": #Dual type is Ice
+
+      match type1:
+
+        case "Normal": #Normal/Ice
+
+          print(" Fire\n", "Rock\n", "Fighting\n", "Steel\n")
+
+        case "Fire": #Fire/Ice
+
+          print(" Rock\n", "Water\n", "Ground\n", "Fighting\n")
+
+        case "Water": #Water/Ice
+            
+          print(" Electric\n", "Rock\n", "Grass\n", "Fighting\n")
+
+        case "Grass": #Grass/Ice
+
+          print(" Fire\n", "Flying\n", "Steel\n", "Poison\n", "Rock\n", "Fighting\n", "Bug\n" )
+
+        case "Psychic": #Psychic/Ice
+
+          print(" Fire\n", "Steel\n", "Rock\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Ice
+
+          print(" Fire\n", "Fighting\n", "Rock\n", "Steel\n")
+            
+        case "Steel": #Steel/Ice
+
+          print(" Fire\n", "Fighting\n", "Ground\n")
+
+        case "Fighting": #Fighting/Ice
+     
+          print(" Fire\n", "Fighting\n", "Steel\n", "Flying\n", "Psychic\n" )
+
+        case "Ground": #Ground/Ice
+         
+          print(" Fire\n", "Water\n", "Grass\n", "Steel\n", "Fighting\n")
+
+        case "Rock": #Rock/Ice
+          
+          print(" Fighting\n", "Steel\n", "Water\n", "Grass\n", "Ground\n", "Rock\n")
+
+        case "Poison": #Poison/Ice
+        
+          print(" Fire\n", "Rock\n", "Steel\n", "Ground\n", "Rock\n")
+
+        case "Ice": #Flying/Ice
+    
+           print(" Electric\n", "Rock\n" "Fire\n", "Steel\n")
+
+        case "Dragon": #Dragon/Ice
+   
+          print(" Rock\n", "Fighting\n", "Steel\n","Dragon\n")
+
+        case "Ghost": #Ghost/Ice
+    
+          print(" Fire\n", "Rock\n", "Steel\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Ice
+        
+          print(" Fire\n", "Rock\n", "Steel\n", "Flying\n")
+
+  ##################  
+
+    case "Dragon": #Dual type is Dragon
+
+      match type1:
+
+        case "Normal": #Normal/Dragon
+
+          print(" Dragon\n", "Ice\n", "Fighting\n")
+
+        case "Fire": #Fire/Dragon
+
+          print(" Dragon\n", "Rock\n", "Ground\n")
+
+        case "Water": #Water/Dragon
+          
+          print(" Dragon\n")
+
+        case "Grass": #Grass/Dragon
+
+          
+          print(" Dragon\n", "Flying\n", "Ice\n", "Poison\n", "Bug\n", "Ice\n")
+
+        case "Psychic": #Psychic/Dragon
+
+          print(" Dragon\n", "Ice\n", "Ghost\n", "Dark\n")
+            
+        case "Dark": #Dark/Dragon
+
+          print(" Dragon\n", "Ice\n", "Fighting\n", "Bug\n")
+            
+        case "Steel": #Steel/Dragon
+
+          print(" Fighting\n", "Ground\n")
+
+        case "Fighting": #Fighting/Dragon
+     
+          print(" Dragon\n", "Ice\n", "Flying\n", "Psychic\n" )
+
+        case "Ground": #Ground/Dragon
+   
+          print(" Dragon\n", "Ice\n")
+
+        case "Rock": #Rock/Dragon
+       
+          print(" Dragon\n", "Ice\n", "Steel\n", "Fighting\n", "Ground\n")
+
+        case "Poison": #Poison/Dragon
+    
+          print(" Dragon\n", "Ice\n", "Psychic\n", "Ground\n")
+
+        case "Ice": #Flying/Dragon
+     
+          print(" Dragon\n", "Ice\n")
+
+        case "Dragon": #Ice/Dragon
+      
+          print(" Dragon\n", "Fighting\n", "Steel\n","Rock\n")
+
+        case "Ghost": #Ghost/Dragon
+    
+          print(" Dragon\n", "Ice\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Dragon
+    
+          print(" Dragon\n", "Ice\n", "Rock\n", "Flying\n")
+
+  ##################  
+
+    case "Ghost": #Dual type is Ghost
+
+      match type1:
+
+        case "Normal": #Normal/Ghost
+
+          print(" Dark\n")
+
+        case "Fire": #Fire/Ghost
+
+          print(" Dark\n", "Ghost", "Water\n", "Rock\n", "Ground\n")
+
+        case "Water": #Water/Ghost
+          
+          print(" Dark\n", "Ghost\n", "Electric\n", "Grass\n")
+
+        case "Grass": #Grass/Ghost
+
+          print(" Dark\n", "Ghost\n", "Ice\n", "Poison\n", "Fire\n", "Flying\n")
+
+        case "Psychic": #Psychic/Ghost
+
+          print(" Dark\n", "Ghost\n")
+            
+        case "Dark": #Dark/Ghost
+
+          print("None\n")
+            
+        case "Steel": #Steel/Ghost
+
+          print(" Fire\n", "Ground\n")
+
+        case "Fighting": #Fighting/Ghost
+     
+          print(" Ghost\n", "Flying\n", "Psychic\n" )
+
+        case "Ground": #Ground/Ghost
+         
+          print(" Dark\n", "Ghost\n", "Water\n", "Grass", "Ice\n")
+
+        case "Rock": #Rock/Ghost
+        
+          print(" Dark\n", "Ghost\n", "Steel\n", "Water\n", "Ground\n", "Grass")
+
+        case "Poison": #Poison/Ghost
+         
+          print(" Dark\n", "Ghost\n", "Psychic\n", "Ground\n")
+
+        case "Flying": #Flying/Ghost
+       
+          print(" Dark\n", "Ghost\n", "Electric", "Ice\n", "Rock\n")
+
+        case "Ice": #Ice/Ghost
+        
+          print(" Dark\n", "Ghost\n", "Fire\n", "Steel\n","Rock\n")
+
+        case "Dragon": #Dragon/Ghost
+        
+          print(" Dragon\n", "Ice\n", "Ghost\n", "Dark\n")
+
+        case "Bug": #Bug/Ghost
+        
+          print(" Dark\n", "Ghost\n", "Rock\n", "Flying\n", "Fire\n")
+
+  ##################  
+
+    case "Bug": #Dual type is Bug
+
+      match type1:
+
+        case "Normal": #Normal/Bug
+
+          print(" Fire\n", "Flying\n", "Rock\n")
+
+        case "Fire": #Fire/Bug
+
+          print(" Rock\n", "Flying", "Water\n")
+
+        case "Water": #Water/Bug
+            
+          print(" Rock\n", "Flying\n", "Electric\n")
+
+        case "Grass": #Grass/Bug
+
+          print(" Fire\n", "Rock\n", "Flying\n", "Poison\n", "Bug\n", "Ice\n")
+
+        case "Psychic": #Psychic/Bug
+
+          print(" Fire\n", "Flying\n", "Rock\n", "Dark\n", "Ghost")
+            
+        case "Dark": #Dark/Bug
+
+          print(" Fire\n", "Flying\n", "Rock\n", "Bug\n")
+            
+        case "Steel": #Steel/Bug
+
+          print(" Fire\n")
+
+        case "Fighting": #Fighting/Bug
+     
+          print(" Fire\n", "Flying\n", "Psychic\n" )
+
+        case "Ground": #Ground/Bug
+          
+          print(" Fire\n", "Flying\n", "Water\n", "Ice\n")
+
+        case "Rock": #Rock/Bug
+    
+          print(" Water\n", "Steel\n" )
+
+        case "Poison": #Poison/Bug
+   
+          print(" Fire\n", "Flying\n", "Psychic\n")
+
+        case "Flying": #Flying/Bug
+    
+          print(" Fire\n", "Flying\n", "Electric", "Ice\n", "Rock\n")
+
+        case "Ice": #Ice/Bug
+  
+          print(" Fire\n", "Flying\n", "Rock\n", "Steel\n")
+
+        case "Dragon": #Dragon/Bug
+   
+          print(" Flying\n", "Rock\n", "Ice\n", "Dark\n")
+
+        case "Bug": #Ghost/Bug
+ 
+          print(" Fire\n", "Flying\n", "Rock\n", "Ghost\n", "Dark\n")
+   
 #Checklist for types
 
 #___/Normal type:
@@ -745,7 +1458,7 @@ natDex = [" None", " Bulbasaur", " Ivysaur", " Venusaur", " Charmander", " Charm
 #--------------------------------------------------#
 
 
-bulbasaur = Pokemon(types[4], types[0], natDex[1], 45, 49, 49, 65, 65, 45)
+bulbasaur = Pokemon(types[4], types[13], natDex[1], 45, 49, 49, 65, 65, 45)
 
 ivysaur = Pokemon(types[4], types[13], natDex[2], 60, 62, 63, 80, 80, 60)
 
@@ -818,6 +1531,8 @@ while switch == True:
 
 
 
+  #1000 LINES!
+  
   if flag == True and int(ent) <= len(dex):
     print("\n")
     checkEntry(dex[int(ent)-1]) 
